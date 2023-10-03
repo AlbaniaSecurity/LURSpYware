@@ -35,7 +35,7 @@ int connect_server(){
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
 
-    if (getaddrinfo("lursy.serveo.net", "44044", &hints, &result) != 0) {
+    if (getaddrinfo("<your server here>", "<port>", &hints, &result) != 0) {
         std::cerr << "Erro ao obter informações sobre o endereço do servidor" << std::endl;
         WSACleanup();
         return 0;
