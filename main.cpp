@@ -21,8 +21,8 @@ int special_keys[] = {
 int unlock = 0;
 
 int connect_server(){
-// inicializando winsock
-WSADATA wsaData;
+    // inicializando winsock
+    WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Falha ao inicializar o Winsock" << std::endl;
         return 0;
